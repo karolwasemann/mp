@@ -1,0 +1,21 @@
+.about-me {
+    margin: 0;
+    padding: 20px;
+    min-height: 60vh;
+    background: #c7c7c7;
+
+    &__title {
+        margin: 64px;
+        font-size: 48px;
+        text-align: center;
+    }
+}
+
+.container {
+
+    &__img {
+        width: 400px;
+    }
+
+
+}

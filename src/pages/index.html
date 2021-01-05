@@ -3,151 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>My Portfolio</title>
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="header">
+      <h1 class="header__title">Karol Wasemann - Web developer</h1>
+      <nav class="header__nav">
+        <a class="header__link header__link--1" href="">Home</a>
+        <a class="header__link header__link--2" href="">About Me</a>
+        <a class="header__link header__link--3" href="">My Skills</a>
+        <a class="header__link header__link--4" href="">Contact</a>
+      </nav>
+    </header>
+
+    <section class="about-me">
+      <h2 class="about-me__title">Hi, Im Karol</h2>
+      <article class="about-me__desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+        voluptatibus fuga iusto deleniti reiciendis, dolores delectus iure atque
+        molestiae accusantium rem adipisci dolorem eveniet aut amet ducimus
+        distinctio. Dicta, perspiciatis? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Repellat quod atque minus natus animi? Corporis sequi
+        aut repellat voluptatibus laudantium, accusamus voluptates provident
+        facere, dicta illum assumenda atque placeat ipsa. Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Fugiat amet a laboriosam quae
+        distinctio neque explicabo autem! Soluta, iusto aut earum quaerat odio
+        praesentium adipisci voluptatibus placeat. Facilis, eligendi voluptate!
+      </article>
+      <div class="about-me__container container">
+        <span class="container__item"
+          ><img src="../assets/mot.jpg" alt="" class="container__img" />
+          <span>
+        <span class="container__item"
+          ><img src="../assets/mot.jpg" alt="" class="container__img" />
+          <span>
+        <span class="container__item"
+          ><img src="../assets/mot.jpg" alt="" class="container__img" />
+          <span>
+        <span class="container__item"
+          ><img src="../assets/mot.jpg" alt="" class="container__img" />
+          <span>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2 class="skills__header">My Skills</h2>
+      <article class="skills__section">
+        <span class="skills__emoji">💪</span>
+        <h3 class="skills__title">Working knowledge</h3>
+        <ul class="skill">
+          <li class="skill__items">Semantic HTML5</li>
+          <li class="skill__items">CSS Flexbox</li>
+          <li class="skill__items">CSS Grid</li>
+          <li class="skill__items">Sass</li>
+        </ul>
+      </article>
+      <article class="skills__section">
+        <span class="skills__emoji">🤔</span>
+        <h3 class="skills__title">Know something about</h3>
+        <ul class="skill">
+          <li class="skill__items">Java Script</li>
+          <li class="skill__items">Git</li>
+          <li class="skill__items">CSS Animation</li>
+          <li class="skill__items">NPM Scripts</li>
+        </ul>
+      </article>
+      <article class="skills__section">
+        <span class="skills__emoji">🎓</span>
+        <h3 class="skills__title">Want to learn</h3>
+        <ul class="skill">
+          <li class="skill__items">React JS</li>
+          <li class="skill__items">Advanced JS</li>
+          <li class="skill__items">Gatsby</li>
+          <li class="skill__items">Typescript</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="contact">
+      <h2 class="contact__header">Contact me</h2>
+      <p class="contact__desc">
+        I’m open for new opportunities. If you have one for me we should talk!
+      </p>
+      <section class="contact__news">Subscribe to the newsletter</section>
+      <section class="social">
+        <ul class="social__items">
+          <li class="social__item"><a class="social__link" href="">GH</a></li>
+          <li class="social__item"><a class="social__link" href="">LI</a></li>
+          <li class="social__item"><a class="social__link" href="">FB</a></li>
+        </ul>
+      </section>
+    </section>
   </body>
 </html>
