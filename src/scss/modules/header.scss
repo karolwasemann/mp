@@ -1,50 +1,118 @@
-.header {
+.wrapper {
+  height: 100vh;
+  width: 100%;
   position: relative;
+
+  &__contact {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    position: absolute;
+    color: black;
+    font-size: 42px;
+    bottom: 58px;
+    right: 52px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 68px;
+    padding: 8px 26px;
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 6px;
+      left: 6px;
+      background: whitesmoke;
+      position: absolute;
+      z-index: -1;
+      transition: top .2s ease-in-out,
+        left .2s ease-in-out;
+    }
+
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: -6px;
+      left: -6px;
+      border: 2px solid black;
+      position: absolute;
+      z-index: -1;
+      transition: top .2s ease-in-out,
+        left .2s ease-in-out;
+    }
+
+    &:hover::after {
+      top: 6px;
+      left: 6px;
+    }
+
+    &:hover::before {
+      top: -6px;
+      left: -6px;
+    }
+  }
+}
+
+
+
+.nav {
+  position: absolute;
+  width: 100%;
+  margin: 32px 0 0;
+  display: flex;
+  padding-left: 28px;
+
+
+
+  &__link {
+    font-size: 36px;
+    text-decoration: none;
+    z-index: 1;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 56px;
+
+    padding-bottom: 15px;
+    font-weight: 800;
+    transition: text-decoration 1.4s linear;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 0;
+      background: black;
+      transition: width .3s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+      transition: width .3s ease-in-out;
+
+    }
+  }
+
+}
+
+// @keyframes underline {}
+
+.header {
   height: 100vh;
   background-image: url(../assets/earth.jpg);
   background-size: cover;
   background-attachment: fixed;
+  font-weight: bold;
+  clip-path: polygon(100% 0, 100% 38%, 65% 100%, 0 100%, 0 17%);
+  z-index: -1;
+
 
   &__title {
     position: absolute;
     top: 60%;
     left: 20%;
     color: whitesmoke;
-  }
-
-  // &__nav {}
-
-  &__link {
-    position: absolute;
-    font-size: 32px;
-    color: whitesmoke;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-
-    transition: border-bottom linear .3s;
-
-    &:hover {
-      border-bottom: 1px solid whitesmoke;
-    }
-
-    &--1 {
-      top: 2%;
-      left: 2%;
-    }
-
-    &--2 {
-      bottom: 2%;
-      left: 2%;
-    }
-
-    &--3 {
-      top: 2%;
-      right: 2%;
-    }
-
-    &--4 {
-      bottom: 2%;
-      right: 2%;
-    }
   }
 }
