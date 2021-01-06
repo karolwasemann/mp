@@ -16,21 +16,77 @@
     }
 }
 
-.container {
 
+
+.container {
     margin: 64px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     column-gap: 6vw;
-    row-gap: 6vw;
+    row-gap: 4vw;
 
-    &__item {
+
+
+    &__wrap {
         width: 100%;
         height: 200px;
-        background-image: url(../assets/mot.jpg);
+        position: relative;
+        transition: transform .4s linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        &:hover {
+            box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.91);
+
+
+        }
+    }
+
+    &__item {
+
         background-size: cover;
-        background-position: center;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        transition: transform .4s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &--1 {
+            background-image: url(../assets/tennis.jpg);
+        }
+
+        &--2 {
+            background-image: url(../assets/mot.jpg);
+        }
+
+        &--3 {
+            background-image: url(../assets/tennis.jpg);
+        }
+
+        &--4 {
+            background-image: url(../assets/tennis.jpg);
+        }
+
+
+        &--txt {
+            color: whitesmoke;
+            font-size: 32px;
+            opacity: 0;
+            transition: opacity .4s ease-in-out;
+        }
+
+        &:hover &--txt {
+            opacity: 1;
+        }
 
 
 
@@ -38,20 +94,20 @@
             content: "";
             width: 100%;
             height: 100%;
-            opacity: 0;
             background: black;
             position: absolute;
             top: 0;
             left: 0;
-
-            &:hover {
-                opacity: .5;
-            }
+            transition: opacity .3s ease-in-out;
+            z-index: -1;
+            opacity: 0;
         }
 
+        &:hover::after {
+            opacity: .5;
+        }
+
+
     }
-
-
-
 
 }
