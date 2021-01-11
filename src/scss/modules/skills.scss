@@ -24,20 +24,48 @@
 
 .skill {
     display: flex;
+    padding: 20px 10px;
     flex-direction: column;
-    margin-right: 24px;
+    width: 26vw;
+    justify-content: space-around;
+    margin: 0 24px 36px;
+    transition: box-shadow .4s ease-in-out,
+        transform .4s ease-in-out;
+    box-shadow: 0px 0px 3px 3px rgba(86, 86, 86, 0.1);
+
+    &:hover {
+        box-shadow: 0px 0px 10px 9px rgba(86, 86, 86, 0.46);
+        transform: scale(1.1);
+    }
 
     &__emoji {
         padding-bottom: 34px;
-        font-size: 64px;
+
         text-align: center;
+
+        &--img {
+            height: 80px;
+            width: 80px;
+        }
     }
 
     &__title {
         padding-bottom: 32px;
+        align-self: center;
     }
 
     &__list {
         line-height: 54px;
+    }
+
+    &__items {
+        list-style: none;
+        text-align: left;
+
+        &--mark {
+            margin-right: 16px;
+            height: 20px;
+            width: 20px;
+        }
     }
 }

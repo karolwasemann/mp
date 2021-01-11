@@ -11,33 +11,26 @@
     />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="home">
       <nav class="nav">
-        <a class="nav__link" href="">Home</a>
-        <a class="nav__link" href="">About Me</a>
-        <a class="nav__link" href="">My Skills</a>
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
       </nav>
-      <button class="wrapper__contact" href="">Contact</button>
+      <a class="wrapper__contact" href="#contact">Contact</a>
       <header class="header">
         <h1 class="header__title">Karol Wasemann - Web developer</h1>
       </header>
     </div>
 
-    <section class="about-me">
+    <section class="about-me" id="about">
       <div class="about-me--wrap">
-        <h2 class="about-me__title">Hi, Im Karol</h2>
+        <h2 class="about-me__title">Who on earth is Karol?</h2>
         <article class="about-me__desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-          voluptatibus fuga iusto deleniti reiciendis, dolores delectus iure
-          atque molestiae accusantium rem adipisci dolorem eveniet aut amet
-          ducimus distinctio. Dicta, perspiciatis? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Repellat quod atque minus natus animi?
-          Corporis sequi aut repellat voluptatibus laudantium, accusamus
-          voluptates provident facere, dicta illum assumenda atque placeat ipsa.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet
-          a laboriosam quae distinctio neque explicabo autem! Soluta, iusto aut
-          earum quaerat odio praesentium adipisci voluptatibus placeat. Facilis,
-          eligendi voluptate!
+          Karol is a young beginner programmer who wants to keep developing. His
+          greatest pleasure is working in a team and improving his life by
+          solving problems through programming. Currently Karol is learning Web
+          Development at DCI in Berlin. Besides that he is also interested in
         </article>
         <div class="about-me__container container">
           <div class="container__wrap">
@@ -64,43 +57,142 @@
       </div>
     </section>
 
-    <section class="skills">
-      <h2 class="skills__heading">My Skills</h2>
+    <section class="skills" id="skills">
+      <h2 class="skills__heading">Skills</h2>
       <div class="skills__wrapper">
         <article class="skills__section skill">
-          <span class="skill__emoji">💪</span>
+          <span class="skill__emoji"
+            ><img
+              class="skill__emoji--img"
+              src="../assets/icons/thought.svg"
+              alt="knowledge"
+          /></span>
           <h3 class="skill__title">Working knowledge</h3>
           <ul class="skill__list">
-            <li class="skill__items">Semantic HTML5</li>
-            <li class="skill__items">CSS Flexbox</li>
-            <li class="skill__items">CSS Grid</li>
-            <li class="skill__items">Sass</li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/check-mark.svg"
+                  alt="check-mark" /></span
+              >Semantic HTML5
+            </li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/check-mark.svg"
+                  alt="check-mark" /></span
+              >CSS Flexbox
+            </li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/check-mark.svg"
+                  alt="check-mark" /></span
+              >CSS Grid
+            </li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/check-mark.svg"
+                  alt="check-mark" /></span
+              >Sass
+            </li>
           </ul>
         </article>
         <article class="skills__section skill">
-          <span class="skill__emoji">🤔</span>
+          <span class="skill__emoji"
+            ><img
+              class="skill__emoji--img"
+              src="../assets/icons/idea.svg"
+              alt="knowledge"
+          /></span>
           <h3 class="skill__title">Know something about</h3>
           <ul class="skill__list">
-            <li class="skill__items">Java Script</li>
-            <li class="skill__items">Git</li>
-            <li class="skill__items">CSS Animation</li>
-            <li class="skill__items">NPM Scripts</li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/checked.svg"
+                  alt="check-mark" /></span
+              >Java Script
+            </li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/checked.svg"
+                  alt="check-mark" /></span
+              >Git
+            </li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/checked.svg"
+                  alt="check-mark" /></span
+              >CSS Animation
+            </li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/checked.svg"
+                  alt="check-mark" /></span
+              >NPM Scripts
+            </li>
           </ul>
         </article>
         <article class="skills__section skill">
-          <span class="skill__emoji">🎓</span>
+          <span class="skill__emoji"
+            ><img
+              class="skill__emoji--img"
+              src="../assets/icons/understanding.svg"
+              alt="knowledge"
+          /></span>
           <h3 class="skill__title">Want to learn</h3>
           <ul class="skill__list">
-            <li class="skill__items">React JS</li>
-            <li class="skill__items">Advanced JS</li>
-            <li class="skill__items">Gatsby</li>
-            <li class="skill__items">Typescript</li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/lightbulb.svg"
+                  alt="check-mark" /></span
+              >React JS
+            </li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/lightbulb.svg"
+                  alt="check-mark" /></span
+              >Advanced JS
+            </li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/lightbulb.svg"
+                  alt="check-mark" /></span
+              >Gatsby
+            </li>
+            <li class="skill__items">
+              <span
+                ><img
+                  class="skill__items--mark"
+                  src="../assets/icons/lightbulb.svg"
+                  alt="check-mark" /></span
+              >Typescript
+            </li>
           </ul>
         </article>
       </div>
     </section>
 
-    <footer class="contact">
+    <footer class="contact" id="contact">
       <h2 class="contact__header">Contact me</h2>
       <p class="contact__desc">
         I’m open for new opportunities. If you have one for me we should talk!
@@ -108,34 +200,139 @@
       <section class="social">
         <ul class="social__items">
           <li class="social__item">
-            <a class="social__link" href=""
+            <a
+              target="_blank"
+              class="social__link"
+              href="https://www.facebook.com/karol.wasemann/"
               ><img
                 src="../assets/icons/facebook.svg"
-                alt=""
+                alt="facebook icon"
                 class="social__icon"
             /></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href=""
+            <a
+              target="_blank"
+              class="social__link"
+              href="https://www.linkedin.com/in/karol-wasemann/"
               ><img
                 src="../assets/icons/linkedin.svg"
-                alt=""
+                alt="linkedin icon"
                 class="social__icon"
             /></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href=""
+            <a
+              target="_blank"
+              class="social__link"
+              href="https://github.com/karolwasemann"
               ><img
                 src="../assets/icons/github.svg"
-                alt=""
+                alt="github icon"
                 class="social__icon"
             /></a>
           </li>
         </ul>
-        <a class="social__mail" href^="mailto:kw.kwaq@gmail.com"
-          ><img class="social__icon" src="../assets/icons/gmail.svg" alt=""
+        <a class="social__mail" href^="#"
+          ><img
+            class="social__icon"
+            src="../assets/icons/gmail.svg"
+            alt="mail icon"
         /></a>
       </section>
     </footer>
+    <section class="formular">
+      <span class="formular__cancel"
+        ><img
+          class="formular__cancel--img"
+          src="../assets/icons/cancel.svg"
+          alt=""
+      /></span>
+      <h2 class="formular__heading">Contact me</h2>
+      <form class="form" action="">
+        <legend class="form__legend">
+          Let's get together! Together we can do something to make the world a
+          better place!
+        </legend>
+        <div class="form__names">
+          <div class="form__fname">
+            <label for="name">Firsname</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Firstname"
+              required
+            />
+          </div>
+          <div class="form__lname">
+            <label for="name">Lastname</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Lastname"
+              required
+            />
+          </div>
+        </div>
+        <div class="form__email">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="email@examlpe.pl"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+        <div class="form__mess">
+          <label for="mess">Message</label>
+          <textarea
+            name="mess"
+            id="mess"
+            cols="40"
+            rows="10"
+            placeholder="Please writ your message here..."
+          ></textarea>
+        </div>
+        <div class="form__phone">
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="0170123456789"
+          />
+        </div>
+        <div class="loca">
+          <label for="location">Location</label>
+          <select name="location" id="location">
+            <option disabled selected value="Select your location...">
+              Select your location...
+            </option>
+            <option value="Gemany">Germany</option>
+            <option value="Polen">Polen</option>
+          </select>
+        </div>
+        <div class="form__check">
+          <input type="checkbox" name="check" id="check" required />
+          <label for="check" class="from__check--l">
+            I have read and agree to the <a href=""> Data Privacy</a></label
+          >
+        </div>
+        <div class="form__sub">
+          <label for="sub">
+            <input
+              class="form__sub--l"
+              type="submit"
+              id="sub"
+              name="sub"
+              value="Send"
+            />
+          </label>
+        </div>
+      </form>
+    </section>
   </body>
 </html>

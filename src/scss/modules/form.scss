@@ -1,0 +1,145 @@
+.formular {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: calc(50% - 55vw/2);
+    display: none;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    min-height: 80vh;
+    width: 55vw;
+    margin: 22px auto;
+    border: .2px solid black;
+    box-shadow: 0px 0px 11px 8px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 32px;
+
+    &__heading {
+        font-size: 32px;
+        align-self: center;
+        margin-bottom: 12px;
+    }
+
+    &__cancel {
+        cursor: pointer;
+
+        &--img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px black;
+    display: block;
+    font-size: 22px;
+    width: 100%;
+    margin: 8px 0 10px;
+    padding: 4px;
+}
+
+
+textarea {
+    border: none;
+    border-bottom: solid 1px black;
+    display: block;
+    font-size: 22px;
+    width: 100%;
+    margin: 8px 0 10px;
+    padding: 4px;
+    background: transparent;
+
+}
+
+
+
+label {
+    font-size: 16px;
+    padding-left: 4px;
+
+}
+
+select {
+    border: none;
+    border-bottom: solid 1px black;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    margin: 8px 0 10px;
+    padding: 4px;
+    background: transparent;
+}
+
+
+
+#check {
+    width: 8%;
+    margin: 0;
+    line-height: 20px;
+}
+
+a {
+    color: black;
+}
+
+.form {
+    font-size: 22px;
+
+    &__legend {
+        margin-bottom: 22px;
+    }
+
+    &__names {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__fname {
+        width: 50%;
+        margin-right: 12px;
+    }
+
+    &__lname {
+        margin-left: 12px;
+        width: 50%;
+    }
+
+    &__check {
+        font-size: 22px;
+        display: flex;
+        line-height: 24px;
+        align-items: center;
+        margin: 8px 0 20px;
+    }
+
+
+    &__sub {
+        width: 25%;
+        margin: 0 auto;
+
+        &--l {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            transition: all .4s ease-in-out;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            background: rgb(146, 91, 70);
+            color: whitesmoke;
+
+            &:hover {
+                box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.46);
+                color: black;
+            }
+        }
+    }
+}
