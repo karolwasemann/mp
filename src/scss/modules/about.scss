@@ -10,6 +10,11 @@
         margin: 64px;
         font-size: 48px;
         text-align: center;
+
+        @media(max-width: 425px) {
+            margin: 44px;
+            font-size: 38px;
+        }
     }
 
     &--wrap {
@@ -28,6 +33,10 @@
     column-gap: 6vw;
     row-gap: 4vw;
 
+    @media(max-width: 425px) {
+        grid-template-columns: 1fr;
+        row-gap: 10vw;
+    }
 
 
     &__wrap {

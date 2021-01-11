@@ -8,7 +8,7 @@ import "../scss/main.scss";
 
 console.log("HELLO 🚀");
 
-const mail = document.querySelector(".social__mail");
+const mail = document.querySelector(".social__item--mail");
 const form = document.querySelector(".formular");
 const cancel = document.querySelector(".formular__cancel");
 
