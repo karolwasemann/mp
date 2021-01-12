@@ -21,6 +21,14 @@
         max-width: 1024px;
         margin: 0 auto;
     }
+
+    &__desc {
+        &--arrow {
+            margin: 0 auto;
+            display: block;
+            margin-top: 12px;
+        }
+    }
 }
 
 

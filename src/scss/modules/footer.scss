@@ -1,5 +1,5 @@
 .contact {
-    padding: 24px;
+    padding: 24px 16px 62px;
     display: flex;
     flex-direction: column;
     min-height: 40vh;
@@ -12,11 +12,21 @@
 
         font-size: 34px;
         margin-bottom: 42px;
+
+        @media(max-width: 320px) {
+            font-size: 26px;
+            margin-bottom: 34px;
+
+        }
     }
 
     &__desc {
         margin-bottom: 42px;
         font-size: 20px;
+
+        @media(max-width: 320px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -25,6 +35,7 @@
     justify-content: center;
     align-items: center;
     width: 60%;
+    margin: 0 16px;
 
     &__items {
         width: 300px;
@@ -37,11 +48,21 @@
         list-style: none;
         height: 52px;
         width: 52px;
-
         margin-right: 32px;
+
+        @media(max-width: 425px) {
+            height: 42px;
+            width: 42px;
+        }
+
+        @media(max-width: 320px) {
+            height: 34px;
+            width: 34px;
+        }
 
         &--mail {
             margin-left: 10vw;
+            cursor: pointer;
         }
     }
 
@@ -56,6 +77,16 @@
         height: 52px;
         width: 52px;
         transition: transform .2s ease-in-out;
+
+        @media(max-width: 425px) {
+            height: 42px;
+            width: 42px;
+        }
+
+        @media(max-width: 320px) {
+            height: 34px;
+            width: 34px;
+        }
 
         &:hover {
             transform: scale(1.1);

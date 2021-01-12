@@ -5,7 +5,7 @@
     width: 100%;
 
     &__heading {
-        margin: 42px 0 164px;
+        margin: 42px 0 140px;
         font-size: 48px;
         text-align: center;
         width: 100%;
@@ -35,11 +35,11 @@
 
 .skill {
     display: flex;
-    padding: 20px 10px;
+    padding: 20px 16px;
     flex-direction: column;
     width: 26vw;
     justify-content: space-around;
-    margin: 0 24px 36px;
+    margin: 0 24px 120px;
     transition: box-shadow .4s ease-in-out,
         transform .4s ease-in-out;
     box-shadow: 0px 0px 3px 3px rgba(86, 86, 86, 0.1);
