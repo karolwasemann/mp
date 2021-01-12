@@ -21,3 +21,21 @@ body {
     // background: rgb(238, 215, 215);
     background: rgb(206, 189, 189);
 }
+
+.prl {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 40%;
+    left: 40%;
+    z-index: 1;
+
+    &__img {
+
+        z-index: 10;
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 40%;
+    }
+}
